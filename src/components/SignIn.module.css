@@ -1,0 +1,216 @@
+.container {
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    min-height: 98vh;
+    height: fit-content;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  .formContainer {
+    border: 1px solid silver;
+    width: 50%;
+    padding: 50px;
+    margin: 50px;
+    border-radius: 10px;
+    height: fit-content;
+    background-color: #00AFEF;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0px 25px 26px 15px rgba(0,0,0,0.1);
+  }
+
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(-359deg);
+    }
+  }
+  
+  
+  .formField {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+    height: 50px;
+  }
+  
+
+  .formInput {
+    width: 90%;
+    height: 50px;
+    border-radius: 40px;
+    padding: 0px 10px;
+    border: 1px solid #fff;
+    transition: all 0.2s ease-in;
+    opacity: 0.8;
+    background-color: #45c5f4;
+    color: #fff;
+    margin: 2px auto;
+  }
+
+  .formInput::placeholder {
+    color: #fff;
+    opacity: 1;
+  }
+  
+  .uncompleted {
+    width: 90%;
+    height: 50px;
+    border-radius: 40px;
+    padding: 0px 10px;
+    border: 3px solid red;
+    transition: all 0.2s ease-in;
+    margin: auto;
+    background-color: #45c5f4;
+  }
+  
+  .formInput:focus,
+  .uncompleted:focus {
+    outline: none;
+    line-height: 30px;
+    height: 50px;
+    border: 3px solid #04b925;
+    margin: auto;
+    background-color: #45c5f4;
+  }
+  
+  .formField span {
+    height: 10px;
+    text-align: left;
+    margin-top: 5px;
+    margin-right: 40px;
+    width: fit-content;
+    font-size: 1rem;
+    color: red;
+    line-height: 10px;
+    padding: 2px 3px;
+    border-radius: 3px;
+    background-color: #fff;
+  }
+  
+  .checkBoxContainer {
+    display: flex;
+    font-size: 0.85rem;
+    flex-direction: row !important;
+    align-items: center;
+    height: 20px !important;
+    text-align: center;
+  }
+  
+  .formField:nth-child(8) label {
+    color: #1a73e8;
+  }
+
+  
+  .formButtons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .formButtons button {
+    background-color: #fff;
+    padding: 20px 25%;
+    color: #45c5f4;
+    border-radius: 5px;
+    border: none;
+    border-radius: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: all 0.1s ease-in;
+    cursor: pointer;
+    margin: auto;
+  }
+  
+  .formButtons button:hover {
+    background-color: #45c5f4;
+    color: #fff;
+  }
+
+  .character {
+    display: none;
+  }
+
+  .accept {
+    color: #fff;
+    font-size: 14px;
+}
+
+.subtitle {
+  color: #fff;
+  font-size: 14px;
+  text-decoration: none;
+  position: absolute;
+  bottom: 20px;
+  left: 43%
+}
+  
+.eyeIcon {
+  position: absolute;
+  left: 11%;
+  top: 44%;
+  z-index: 2;
+  cursor: pointer;
+  color: #fff;
+}
+
+  @media (max-width: 440px) {
+    .formContainer {
+      padding: 20px;
+      margin: 50px 20px;
+    }
+  
+    .formContainer {
+      border: 1px solid silver;
+      width: 90%;
+      padding: 50px;
+      margin: 50px;
+      border-radius: 10px;
+      height: fit-content;
+      background-color: #00AFEF;
+      position: relative;
+      z-index: 1;
+    }
+  
+    .formInput {
+      width: 90%;
+    }
+  
+    .uncompleted {
+      width: 90%;
+    }
+    .character {
+      display: block;
+      width: 30%;
+      position: absolute;
+      left: 10px;
+      top: -4rem;
+    }
+    .character2 {
+      display: none;
+    }
+    .eyeIcon {
+      position: absolute;
+      left: 20%;
+      top: 44%;
+      z-index: 2;
+      cursor: pointer;
+      color: #fff;
+    }
+  }
+
+  @media (max-width:768px) {
+    .eyeIcon {
+      position: absolute;
+      left: 17%;
+      top: 44%;
+      z-index: 2;
+      cursor: pointer;
+      color: #fff;
+    }
+  }

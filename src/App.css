@@ -1,0 +1,10 @@
+@font-face {
+  font-family: 'Kalame';
+  src: url(./assets/kalame/Kalameh\(FaNum\)-Regular.ttf);
+}
+
+#root {
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
